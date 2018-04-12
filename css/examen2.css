@@ -8,13 +8,14 @@ h1{
 	font-style: verdana;
 	text-align: center;
 }
-
-p{
+/*
+div.links{
 	font-size: 14px;
 	color: #200439;
 	font-style: arial;
 	text-align: justify;
 }
+*/
 
 form{
 	background-color: #b39ddb;
@@ -34,4 +35,12 @@ a{
 
 a:hover{
 	color: white;
+}
+
+footer{
+	margin: 15px;
+	padding: 10px;
+	border: red 1px solid;
+	text-align: center;
+	background-color: gray;
 }

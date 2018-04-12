@@ -20,6 +20,10 @@
 				<br/>
 				<a href="alta_libro.php">Dar de alta libros</a>
 			</div>
+			<footer>
+        	                <a href = "creditos.php">Creditos</a>
+	                </footer>
+
 		</body>
 	</html>
 	<?php

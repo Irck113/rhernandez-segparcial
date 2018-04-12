@@ -10,10 +10,25 @@ chmod 640 /etc/ssl/private/examen2.key
 
 cd /etc/apache2/sites-available/
 
+cp 000-default.conf examen2.conf
 cp default-ssl.conf examen2-ssl.conf
-nano examen2-ssl.conf
 
+nano examen2.conf
+#Modificamos el ServerName a "www.rhernandez.org".
+#Modificamos el ServerAdmin colocando un correo.
+#Modificamos el DocumentRoot colocando: "/var/www/rhernandez-segparcial"
+#Modificamos el nombre de ErrorLog y CustomLog
+#Agregamos al final del archivo un "ServerSignature Off"
+
+nano examen2-ssl.conf
+#Modificamos el DocumentRoot colocando: "/var/www/rhernandez-segparcial"
+#Modificamos el nombre de ErrorLog y CustomLog
+#Modificamos la ruta de SSLCertificateFile a "/etc/ssl/certs/examen2.crt" (Donde se ubica lo que realizamos previamente)
+#Modificamos la ruta de SSLCertificateKeyFile a "/etc/ssl/private/examen2.key" (Donde se ubica lo que realizamos previamente)
+
+a2ensite examen2.conf
 a2ensite examen2-ssl.conf
 a2enmod ssl
 
 systemctl restart apache2
+systemctl reload apache2

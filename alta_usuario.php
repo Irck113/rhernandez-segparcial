@@ -14,7 +14,7 @@
                         <h1>Alta de usuarios</h1>
 			
 			<form action = "alta.php" method="post">
-                        	<legend>Alta de usuarios</legend>
+                        	<legend>Formulario para el alta de usuarios</legend>
 				<label for="nombre">Nombre: </label>
                                 <input type="text" name="nombre"/>
                                 <br/>
@@ -32,6 +32,10 @@
                         	<br/>
                         	<input type="submit" name="enviar" value="Enviar"/>
                 	</form>
+			<footer>
+        	                <a href = "creditos.php">Creditos</a>
+	                </footer>
+
                 </body>
         </html>
         <?php

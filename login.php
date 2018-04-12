@@ -23,6 +23,9 @@
 			<br/>
                         <input type="submit" name="enviar" value="Enviar"/>
                 </form>
+		<footer>
+			<a href = "creditos.php">Creditos</a>
+		</footer>
         </body>
 </html>
 

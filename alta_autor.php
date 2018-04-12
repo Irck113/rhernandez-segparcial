@@ -14,7 +14,7 @@
                         <h1>Alta de autores</h1>
 
                         <form method="post" action="alta.php">
-                                <legend>Alta de autores</legend>
+                                <legend>Formulario para el alta de autores</legend>
                                 <label for="nombre_autor">Nombre: </label>
                                 <input type="text" name="nombre_autor"/>
                                 <br/>
@@ -29,6 +29,10 @@
                                 <br/>
                                 <input type="submit" name="enviar" value="Enviar"/>
                         </form>
+			<footer>
+        	                <a href = "creditos.php">Creditos</a>
+	                </footer>
+
                 </body>
         </html>
         <?php
