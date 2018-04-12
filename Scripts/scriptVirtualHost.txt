@@ -1,0 +1,19 @@
+openssl genrsa -out examen2.key 4096
+openssl req -new -days 365 -key examen2.key -out examen2.csr
+openssl x509 -req -days 365 -in examen2.csr -signkey examen2.key -out examen2.crt
+
+mv examen2.key /etc/ssl/private/
+mv examen2.crt /etc/ssl/certs/
+
+chmod 664 /etc/ssl/certs/examen2.crt
+chmod 640 /etc/ssl/private/examen2.key
+
+cd /etc/apache2/sites-available/
+
+cp default-ssl.conf examen2-ssl.conf
+nano examen2-ssl.conf
+
+a2ensite examen2-ssl.conf
+a2enmod ssl
+
+systemctl restart apache2

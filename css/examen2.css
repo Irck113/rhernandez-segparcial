@@ -1,0 +1,37 @@
+body{
+	background-color: #D1C4E9;
+}
+
+h1{
+	font-size: 30px;
+	color: #361356;
+	font-style: verdana;
+	text-align: center;
+}
+
+p{
+	font-size: 14px;
+	color: #200439;
+	font-style: arial;
+	text-align: justify;
+}
+
+form{
+	background-color: #b39ddb;
+	border: blue 1px dotted;	
+}
+
+input{
+	margin: 8px 4px;
+	padding: 3px;
+	border: blue 2px dotted;
+}
+
+a{
+	margin: 5px;
+	style: none;
+}
+
+a:hover{
+	color: white;
+}
